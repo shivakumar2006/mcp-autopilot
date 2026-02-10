@@ -5,8 +5,8 @@ redis==5.0.1
 # Web Framework
 fastapi==0.109.0
 uvicorn[standard]==0.27.0
-pydantic==2.5.0
-pydantic-settings==2.1.0
+pydantic>=2.7
+pydantic-core>=2.18
 
 # Database
 motor==3.3.2

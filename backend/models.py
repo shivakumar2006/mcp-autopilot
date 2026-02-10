@@ -41,7 +41,7 @@ class WorkflowDeployRequest(BaseModel):
     mcps: List[MCPConfig]
 
 class ScheduleConfig(BaseModel):
-    type: str = Field(..., regex="^(once|hourly|daily|weekly)$")
+    type: str = Field(..., pattern="^(once|hourly|daily|weekly)$")
     time: Optional[str] = None  # For daily/weekly
     interval: Optional[int] = None  # For hourly
 
